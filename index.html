@@ -1,1 +1,40 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game">
+    <div class="name"> typing speed game</div>
+    <div class="container">
+        <div class="options">
+          <div class="selected"> you are playing on  level <span></span></div>
+          <form name="form">
+            <label for="sb"> select the level</label>
+            <select id="sb" name="levels">
+              <option value="easy" >easy </option>
+              <option value="normal">normal </option>
+              <option value="hard">hard </option>
+            </select>
+            <button class="btn"> done</button>
+          </form>
+        </div>
+        <div class="start"> start playing</div>
+        <div class="the-word"></div>
+        <input class="inp" type="text">
+        <div class="wrds">
+        </div>
+        <div class="control">
+           <div class="time-left">time left <span> 0 </span> seconds </div> 
+           <div class="got"> you got <span class="score"> 0 </span> from <span class="total"> 0 </span></div>
+        </div>
+        <div class="finish"></div>
+    </div>
+  </div>
+ <script src="app.js"></script>   
+</body>
+</html>
